@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/Home/Home",
+    "pages/Home/Recommend/Recommend",
+    "pages/Home/Hot/Hot",
+    "pages/Home/Attention/Attention",
+    "pages/Mine/Mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#111",
+    "selectedColor": "blue",
+    "backgroundColor": "#fff",
+    "list": [{
+      "pagePath": "pages/Home/Home",
+      "text": "首页"
+    },{
+      "pagePath": "pages/Mine/Mine",
+      "text": "我的"
+    }]
+  }
+}
