@@ -1,14 +1,15 @@
 <!--pages/Home/Home.wxml-->
 <import src="Item/recommend-item/recommend-item-tpl.wxml"/>
 <import src="Item/hot-item/hot-item-tpl.wxml"/>
+
 <view class="con">
   <!--搜索框-->
   <view class="search">
     <image class="img-search" src="/images/icon_search.png" ></image>
     <input type="text" placeholder-class="place-holder" placeholder="输入你想要的内容" 
     bindfocus="onBindFocus" bindconfirm="onBindConfirm" value="{{inputValue}}"></input>
-    
   </view>
+
   <!--关闭框-->
   <view class="close"  wx:if="{{searchPanelShow}}">
     <text catchtap="onCancelImgTap">取消</text>
@@ -19,7 +20,9 @@
     <image class="" src="/images/quiz.png"></image>
     <text class="quiz-text">提问</text>
   </view>
-</view>
+
+</view> 
+
 
 <view class="page" wx:if="{{pageShow}}">
 <!--顶部导航栏-->
@@ -33,7 +36,6 @@
  
 </view>
  
- 
 <!--内容主体-->
 <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
   
@@ -41,11 +43,11 @@
   <swiper-item >
     <view style='overflow:scroll'>
     <scroll-view scroll-y style='height:98%;'>
-      <block wx:for="{{commendList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+      <!--block wx:for="{{commendList}}" wx:for-item="item" wx:for-index="idx" wx:key=""-->
         <view catchtap="onTapToDetail" data-answer-id="{{item.answerId}}">
-          <template  is="commendTpl" data="{{...item}}" />
+          <template  is="recommendTpl" data="{{...item}}" />
         </view>
-      </block>
+      <!--/block-->
     </scroll-view>
     </view>
   </swiper-item>

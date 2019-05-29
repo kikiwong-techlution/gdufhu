@@ -4,7 +4,8 @@
     "pages/Home/Recommend/Recommend",
     "pages/Home/Hot/Hot",
     "pages/Home/Attention/Attention",
-    "pages/Mine/Mine"
+    "pages/Mine/Mine",
+    "pages/Home/Quiz/Quiz"
   ],
   "window": {
     "backgroundTextStyle": "light",
