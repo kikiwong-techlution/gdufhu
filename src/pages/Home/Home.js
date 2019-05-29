@@ -56,7 +56,7 @@ Page({
   /*提问页面跳转 */
   onTabJump: function () {
     wx.navigateTo({
-      url: '../Home/Quiz/Quiz',
+      url: 'Quiz/Quiz',
       success: function () {
         console.log('Jump success')
       },
@@ -66,6 +66,28 @@ Page({
       complete: function () {
         console.log('Jump complete')
       }
+    })
+  },
+  /*回答详情跳转*/
+  onTapToRecommend: function (event) {
+    // var answerId = event.currentTarget.dataset.answerId
+    // wx.navigateTo({
+    //   url: 'Recommend/Recommend?id=' + answerId,
+    // })
+    wx.navigateTo({
+      url: 'Recommend/Recommend'
+    })
+  },
+
+  /*热榜问题跳转*/
+  onTapToHot: function (event) {
+    // var hotId = event.currentTarget.dataset.hotId
+    // console.log(hotId)
+    // wx.navigateTo({
+    //   url: 'Hot/Hot?id=' + hotId,
+    // })
+    wx.navigateTo({
+      url: 'Hot/Hot'
     })
   },
   /**

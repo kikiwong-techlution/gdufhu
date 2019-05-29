@@ -44,7 +44,7 @@
     <view style='overflow:scroll'>
     <scroll-view scroll-y style='height:98%;'>
       <!--block wx:for="{{commendList}}" wx:for-item="item" wx:for-index="idx" wx:key=""-->
-        <view catchtap="onTapToDetail" data-answer-id="{{item.answerId}}">
+        <view catchtap="onTapToRecommend" data-answer-id="{{item.answerId}}">
           <template  is="recommendTpl" data="{{...item}}" />
         </view>
       <!--/block-->
@@ -56,11 +56,11 @@
   <swiper-item>
     <view style='overflow:scroll'>
     <scroll-view scroll-y style="height:98%">
-      <block wx:for="{{hotList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
-        <view catchtap="onTapToProblem" data-hot-id="{{item.hotId}}">
+      <!--block wx:for="{{hotList}}" wx:for-item="item" wx:for-index="idx" wx:key=""-->
+        <view catchtap="onTapToHot" data-hot-id="{{item.hotId}}">
           <template  is="hotTpl" data="{{...item}}" />
         </view>
-      </block>
+      <!--/block-->
   </scroll-view> 
   </view> 
   </swiper-item>
