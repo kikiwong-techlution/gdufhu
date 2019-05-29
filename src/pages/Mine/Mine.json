@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "user-card": "/components/UserCard/UserCard"
+  },
   "navigationBarTextStyle":"black",
   "navigationBarTitleText":"广金乎"
 }
