@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputValue:'',    //搜索内容
+    currentTab:0,     //tab切换
+    pageShow:true,
+    searchPanelShow:false
   },
 
   /**
@@ -64,7 +67,7 @@ Page({
 
   },
   pageLifetimes: {
-    show() {
+    show () {
       if (typeof this.getTabBar === 'function' &&
         this.getTabBar()) {
         this.getTabBar().setData({
