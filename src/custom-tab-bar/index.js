@@ -1,7 +1,7 @@
 Component({
   data: {
     selected: 0,
-    color: 'black',
+    color: '#fff',
     selectedColor: '#136DFF',
     list: [{
       pagePath: '/pages/Home/Home',
@@ -14,8 +14,6 @@ Component({
       selectedIconPath: '/images/icon_Mine_HL.png',
       text: '我的'
     }]
-  },
-  attached () {
   },
   methods: {
     switchTab (e) {
