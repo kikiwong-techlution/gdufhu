@@ -1,24 +1,24 @@
 Component({
   data: {
     selected: 0,
-    color: "#7A7E83",
-    selectedColor: "#3cc51f",
+    color: 'black',
+    selectedColor: '#136DFF',
     list: [{
-      pagePath: "/pages/Home/Home",
-      iconPath: "/images/icon_component.png",
-      selectedIconPath: "/images/icon_component_HL.png",
-      text: "首页"
+      pagePath: '/pages/Home/Home',
+      iconPath: '/images/icon_Home.png',
+      selectedIconPath: '/images/icon_Home_HL.png',
+      text: '首页'
     }, {
-      pagePath: "/pages/Mine/Mine",
-      iconPath: "/images/icon_component.png",
-      selectedIconPath: "/images/icon_component_HL.png",
-      text: "我的"
+      pagePath: '/pages/Mine/Mine',
+      iconPath: '/images/icon_Mine.png',
+      selectedIconPath: '/images/icon_Mine_HL.png',
+      text: '我的'
     }]
   },
-  attached() {
+  attached () {
   },
   methods: {
-    switchTab(e) {
+    switchTab (e) {
       const data = e.currentTarget.dataset
       const url = data.path
       wx.switchTab({ url })

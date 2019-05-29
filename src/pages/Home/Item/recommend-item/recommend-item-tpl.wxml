@@ -1,0 +1,15 @@
+<template name="recommendTpl">
+  <!--推荐1-->
+  <view class="recommend-container">
+  
+    <text class="recommend-title">APP请假方式来袭。。。</text>
+    <image class="recommend-img" src="{{recommendImg}}" mode="aspectFill"></image>
+    <text class="recommend-content">巴拉巴拉</text>
+    <view class="recommend-tool">
+      <image class="like" src="/images/like.png" />
+      <text>233</text>
+      <image class="comment" src="/images/comment.png" />
+      <text>233,333</text>
+    </view>
+  </view>
+</template>

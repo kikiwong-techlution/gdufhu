@@ -4,7 +4,8 @@
     "pages/Home/Recommend/Recommend",
     "pages/Home/Hot/Hot",
     "pages/Home/Attention/Attention",
-    "pages/Mine/Mine"
+    "pages/Mine/Mine",
+    "pages/Home/Quiz/Quiz"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,8 +15,8 @@
   },
   "tabBar": {
     "custom": true,
-    "color": "#111",
-    "selectedColor": "blue",
+    "color": "black",
+    "selectedColor": "#136DFF",
     "backgroundColor": "#fff",
     "list": [{
       "pagePath": "pages/Home/Home",
