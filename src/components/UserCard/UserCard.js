@@ -23,8 +23,7 @@ Component({
     ]
   },
   lifetimes: {
-    attached: function() {
-      
+    attached: function () {
     }
   }
 })

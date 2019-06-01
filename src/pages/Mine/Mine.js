@@ -13,13 +13,45 @@ Page({
     currentTab: 0,     //tab切换
     pageShow: false,
     searchPanelShow: false,
-    open: false
+    open: false,
+    list1:[
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      },
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      },
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      },
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      },
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      }
+    ],
+    list2:[
+      {
+        icon: '/images/music.png',
+        name:'音乐'
+      },{
+        icon: '/images/music.png',
+        name:'音乐'
+      }
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
+
     // if (app.globalData.userInfo) {
     //   this.setData({
     //     userInfo: app.globalData.userInfo,
